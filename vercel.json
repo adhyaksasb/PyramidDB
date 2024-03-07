@@ -9,10 +9,6 @@
             "dest": "/public/build/"
         },
         {
-            "src": "/storage/(.*)",
-            "dest": "/public/storage/"
-        },
-        {
             "src": "/img/(.*)",
             "dest": "/public/img/"
         },
