@@ -20,7 +20,7 @@
     "env": {
         "APP_NAME": "PyramidDB",
         "APP_ENV": "production",
-        "APP_DEBUG": "true",
+        "APP_DEBUG": "false",
         "APP_URL": "https://pyramid-db.vercel.app",
 
         "APP_CONFIG_CACHE": "/tmp/config.php",
