@@ -1,17 +1,25 @@
 <div class="bg-dark-900 dark:text-gray-200 md:grid md:grid-cols-12 rounded-t-md">
     <div class=" col-span-4 flex justify-center items-center">
         <img src="{{ asset('storage/starRail/' . $character->portrait) }}" alt="{{ $character->portrait }}"
-            class="w-96 h-96 p-2">
+            class="w-fit h-fit p-2">
     </div>
     <div class="col-span-8">
         <div class="py-8 px-9">
             <div class="flex justify-between">
                 <span class="text-4xl text-custom pt-4">{{ $character->name }}</span>
-                <div class="flex flex-col justify-center items-center shrink">
-                    <img src="{{ asset('storage/starRail/icon/element/' . $character->element . '.png') }}"
-                        alt="{{ $character->element }}" class="w-12 h-12">
-                    <p>{{ $character->element }}</p>
+                <div class="flex gap-2">
+                    <div class="flex flex-col justify-center items-center shrink">
+                        <img src="{{ asset('storage/starRail/icon/deco/rarity_' . $character->rarity . '.png') }}"
+                            alt="{{ $character->element }}" class="w-12 h-12">
+                        <p>{{ $character->rarity }} Star</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center shrink">
+                        <img src="{{ asset('storage/starRail/icon/element/' . $character->element . '.png') }}"
+                            alt="{{ $character->element }}" class="w-12 h-12">
+                        <p>{{ $character->element }}</p>
+                    </div>
                 </div>
+
             </div>
             <div class="flex items-center gap-2 bg-dark-700 py-2 px-4 w-fit rounded-md">
                 <img src="{{ asset('storage/starRail/' . $character->paths->icon) }}"
