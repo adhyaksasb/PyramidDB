@@ -12,7 +12,7 @@
     "env": {
         "APP_NAME": "PyramidDB",
         "APP_ENV": "production",
-        "APP_DEBUG": "false",
+        "APP_DEBUG": "true",
         "APP_URL": "https://pyramidb-hsr.vercel.app",
 
         "APP_CONFIG_CACHE": "/tmp/config.php",
@@ -27,5 +27,6 @@
         "SESSION_DRIVER": "cookie",
         "SSR_TEMP_PATH": "/tmp/ssr",
         "NODE_PATH": "node"
-    }
+    },
+    "outputDirectory": "public"
 }
