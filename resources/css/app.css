@@ -52,3 +52,17 @@ html {
     [&::-webkit-slider-runnable-track]:bg-dark-700 [&::-webkit-slider-runnable-track]:rounded-full [&::-webkit-slider-runnable-track]:overflow-hidden [&::-moz-range-track]:bg-dark-700 [&::-moz-range-track]:rounded-full [&::-ms-track]:bg-dark-700 [&::-ms-track]:rounded-full
     [&::-moz-range-progress]:bg-red-400 [&::-moz-range-progress]:rounded-full [&::-ms-fill-lower]:bg-red-400 [&::-ms-fill-lower]:rounded-full [&::-webkit-slider-thumb]:shadow-[-999px_0px_0px_990px_#EB966A];
 }
+
+.coverBg {
+    background-image: url(https://wiki.hoyolab.com/_nuxt/img/bg.52598ca.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.digitsBg {
+    background-image: url("../../public/img/bg.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}

@@ -10,11 +10,11 @@
                 <a wire:key="{{ $character->id }}" wire:navigate href="{{ route('characters.detail', $character->tag) }}"
                     class="text-gray-200 rarity-{{ $character->rarity }} w-24 h-full rounded-lg hover:scale-105 cursor-pointer relative">
                     <picture class="w-24 h-24 object-cover">
-                        <img src="{{ asset('storage/starRail/' . $character->icon) }}" alt="{{ $character->tag }}"
+                        <img src="https://pyramidb.s3.ap-southeast-3.amazonaws.com/img/starRail/{{$character->icon }}" alt="{{ $character->tag }}"
                             class="w-24 h-24 object-cover">
-                        <img src="{{ asset('storage/starRail/icon/element/' . $character->element . '.png') }}"
+                        <img src="https://pyramidb.s3.ap-southeast-3.amazonaws.com/img/starRail/icon/element/{{$character->element}}.png"
                             alt="{{ $character->element }}" class="absolute w-5 left-0 top-0">
-                        <img src="{{ asset('storage/starRail/' . $character->paths->icon) }}"
+                        <img src="https://pyramidb.s3.ap-southeast-3.amazonaws.com/img/starRail/{{$character->paths->icon }}"
                             alt="{{ $character->element }}" class="absolute w-5 right-0 top-0">
                     </picture>
                     <div class="py-1 text-center h-8 flex items-center justify-center">

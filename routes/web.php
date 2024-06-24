@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CharacterController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\RelicScorerController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,9 +22,7 @@ Route::get('/characters', [CharacterController::class, 'index'])->name('characte
 
 Route::get('/characters/{character:tag}', [CharacterController::class, 'detail'])->name('characters.detail');
 
-Route::get('/relic-scorer', function () {
-    return view('pages.relic-scorer');
-})->name('relic-scorer');
+Route::get('/relic-scorer', [RelicScorerController::class, 'index'])->name('relic-scorer');
 
 Route::get('/achievements', function () {
     return view('pages.achievements');

@@ -5,31 +5,31 @@
             <a href="#" class="p-1 border-2 rounded-md"
                 :class="tab == 'Basic ATK' ? 'opacity-100 border-custom' : 'border-gray-200 opacity-60'"
                 @click.prevent="tab = 'Basic ATK'">
-                <img src="{{ asset('img/starRail/' . $character->skills[0]->icon) }}"
+                <img src="https://pyramidb.s3.ap-southeast-3.amazonaws.com/img/starRail/{{$character->skills[0]->icon }}"
                     alt="{{ $character->skills[0]->name }}" class="w-10 h-10 md:w-12 md:h-12">
             </a>
             <a href="#" class="p-1 border-2 rounded-md"
                 :class="tab == 'Skill' ? 'opacity-100 border-custom' : 'border-gray-200 opacity-60'"
                 @click.prevent="tab = 'Skill'">
-                <img src="{{ asset('img/starRail/' . $character->skills[1]->icon) }}"
+                <img src="https://pyramidb.s3.ap-southeast-3.amazonaws.com/img/starRail/{{$character->skills[1]->icon }}"
                     alt="{{ $character->skills[1]->name }}" class="w-10 h-10 md:w-12 md:h-12">
             </a>
             <a href="#" class="p-1 border-2 rounded-md"
                 :class="tab == 'Ultimate' ? 'opacity-100 border-custom' : 'border-gray-200 opacity-60'"
                 @click.prevent="tab = 'Ultimate'">
-                <img src="{{ asset('img/starRail/' . $character->skills[2]->icon) }}"
+                <img src="https://pyramidb.s3.ap-southeast-3.amazonaws.com/img/starRail/{{$character->skills[2]->icon }}"
                     alt="{{ $character->skills[2]->name }}" class="w-10 h-10 md:w-12 md:h-12">
             </a>
             <a href="#" class="p-1 border-2 rounded-md"
                 :class="tab == 'Talent' ? 'opacity-100 border-custom' : 'border-gray-200 opacity-60'"
                 @click.prevent="tab = 'Talent'">
-                <img src="{{ asset('img/starRail/' . $character->skills[3]->icon) }}"
+                <img src="https://pyramidb.s3.ap-southeast-3.amazonaws.com/img/starRail/{{$character->skills[3]->icon }}"
                     alt="{{ $character->skills[3]->name }}" class="w-10 h-10 md:w-12 md:h-12">
             </a>
             <a href="#" class="p-1 border-2 rounded-md"
                 :class="tab == 'Technique' ? 'opacity-100 border-custom' : 'border-gray-200 opacity-60'"
                 @click.prevent="tab = 'Technique'">
-                <img src="{{ asset('img/starRail/' . $character->skills[4]->icon) }}"
+                <img src="https://pyramidb.s3.ap-southeast-3.amazonaws.com/img/starRail/{{$character->skills[4]->icon }}"
                     alt="{{ $character->skills[4]->name }}" class="w-10 h-10 md:w-12 md:h-12">
             </a>
         </div>
@@ -37,7 +37,7 @@
             {{-- Basic ATK --}}
             <div x-show="tab == 'Basic ATK'">
                 <div class="flex flex-col md:flex-row gap-3">
-                    <img src="{{ asset('img/starRail/' . $character->skills[0]->icon) }}"
+                    <img src="https://pyramidb.s3.ap-southeast-3.amazonaws.com/img/starRail/{{$character->skills[0]->icon }}"
                         alt="{{ $character->skills[0]->name }}" class="w-24 h-24">
                     <div x-data="{ level: 1 }" class="flex flex-col gap-2 w-full">
                         <div class="flex items-center gap-2">
@@ -67,7 +67,7 @@
             {{-- Skill --}}
             <div x-show="tab == 'Skill'">
                 <div class="flex flex-col md:flex-row gap-3">
-                    <img src="{{ asset('img/starRail/' . $character->skills[1]->icon) }}"
+                    <img src="https://pyramidb.s3.ap-southeast-3.amazonaws.com/img/starRail/{{$character->skills[1]->icon }}"
                         alt="{{ $character->skills[1]->name }}" class="w-24 h-24">
                     <div x-data="{ level: 1 }" class="flex flex-col gap-2 w-full">
                         <div class="flex items-center gap-2">
@@ -96,7 +96,7 @@
             {{-- Ultimate --}}
             <div x-show="tab == 'Ultimate'">
                 <div class="flex flex-col md:flex-row gap-3">
-                    <img src="{{ asset('img/starRail/' . $character->skills[2]->icon) }}"
+                    <img src="https://pyramidb.s3.ap-southeast-3.amazonaws.com/img/starRail/{{$character->skills[2]->icon }}"
                         alt="{{ $character->skills[2]->name }}" class="w-24 h-24">
                     <div x-data="{ level: 1 }" class="flex flex-col gap-2 w-full">
                         <div class="flex items-center gap-2">
@@ -126,7 +126,7 @@
             {{-- Talent --}}
             <div x-show="tab == 'Talent'">
                 <div class="flex flex-col md:flex-row gap-3">
-                    <img src="{{ asset('img/starRail/' . $character->skills[3]->icon) }}"
+                    <img src="https://pyramidb.s3.ap-southeast-3.amazonaws.com/img/starRail/{{$character->skills[3]->icon }}"
                         alt="{{ $character->skills[3]->name }}" class="w-24 h-24">
                     <div x-data="{ level: 1 }" class="flex flex-col gap-2 w-full">
                         <div class="flex items-center gap-2">
@@ -153,7 +153,7 @@
             {{-- Technique --}}
             <div x-show="tab == 'Technique'">
                 <div class="flex flex-col md:flex-row gap-4">
-                    <img src="{{ asset('img/starRail/' . $character->skills[4]->icon) }}"
+                    <img src="https://pyramidb.s3.ap-southeast-3.amazonaws.com/img/starRail/{{$character->skills[4]->icon }}"
                         alt="{{ $character->skills[4]->name }}" class="w-24 h-24">
                     <div x-data="{ level: 1 }" class="flex flex-col gap-2 w-full">
                         <div class="flex items-center gap-2">
