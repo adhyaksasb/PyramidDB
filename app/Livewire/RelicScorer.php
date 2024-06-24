@@ -28,6 +28,7 @@ class RelicScorer extends Component
             $profile = "There's no player record";
         }
         
+        
         return view('livewire.relic-scorer', compact('profile'));
     }
 }
