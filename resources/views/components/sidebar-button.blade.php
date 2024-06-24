@@ -13,7 +13,7 @@
 <div {{ $attributes->merge(['class' => $bgClass]) }} x-data="{ hovered: false }">
     <a wire:navigate {{ $attributes->merge(['class' => $classes]) }} x-on:mouseover="hovered = true"
         x-on:mouseleave="hovered = false">
-        <img src="{{ asset('img/starRail/icon/sign/' . $src) }}" {{ $attributes->merge(['class' => $imgClass]) }}
+        <img src="{{ asset('https://pyramidb.s3.ap-southeast-3.amazonaws.com/img/starRail/icon/sign/' . $src) }}" {{ $attributes->merge(['class' => $imgClass]) }}
             alt="">
     </a>
     <div x-cloak x-show="hovered" class="z-10 absolute left-28 bg-dark-900 rounded-xl p-4 text-gray-200 mt-4 text-nowrap">
